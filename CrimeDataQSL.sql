@@ -3,7 +3,7 @@ Select
 	Count(vict_sex)	as Vict_count,
 	Sum(CASE When vict_sex = "F" THEN 1 ELSE 0 END) as Female_count,
 	Sum(CASE When vict_sex = "M" THEN 1 ELSE 0 END) as Male_Count,
-    Sum(CASE When vict_sex = "X" THEN 1 ELSE 0 END) as Unknown_sex
+    	Sum(CASE When vict_sex = "X" THEN 1 ELSE 0 END) as Unknown_sex
 From 
 	crimedata
 limit 20;
